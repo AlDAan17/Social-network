@@ -11,8 +11,6 @@ const App = () => {
         <img src = {kitty}/>
       </header>
       <nav className = 'navBar'>
-        {/* <div>Profile</div>
-        <div>Profile</div> */}
         <ul>
           <li><a>Profile</a></li>
           <li><a>Messages</a></li>
