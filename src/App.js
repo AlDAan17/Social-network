@@ -1,24 +1,49 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import kitty from './kitty-logo.png';
+import bg from './bg.jpg';
+import kotori from './kotori.png';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className = 'app-wrapper'>
+      <header className = 'header'>
+        <img src = {kitty}/>
       </header>
+      <nav className = 'navBar'>
+        {/* <div>Profile</div>
+        <div>Profile</div> */}
+        <ul>
+          <li><a>Profile</a></li>
+          <li><a>Messages</a></li>
+          <li><a>News</a></li>
+          <li><a>Music</a></li>
+          <li><a>Settings</a></li>
+        </ul>
+      </nav>
+      <div className = 'content'>
+          <div>
+            <img src = {bg}/>
+          </div>
+          <div>
+            avatar + desription
+          </div>
+          <div>
+            myPosts
+              <div>
+                newPost
+              </div>
+              <div>
+                post1
+              </div>
+              <div>
+                post2
+              </div>
+          </div>
+          <div>
+            messages
+          </div>
+      </div>
     </div>
   );
 }
