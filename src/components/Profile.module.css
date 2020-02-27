@@ -1,0 +1,12 @@
+.content {
+  grid-area: c;
+  background-color: cornflowerblue;
+}
+
+ ul li {
+  list-style-type: none;
+}
+
+.item {
+  color: pink;
+}
