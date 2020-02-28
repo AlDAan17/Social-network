@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from  './Header.module.css';
-import kitty from './../kitty-logo.png';
+import kitty from './../../kitty-logo.png';
 
 const Header = () => {
     return (
