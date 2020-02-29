@@ -3,7 +3,11 @@
 }
 
 .item img{
+<<<<<<< HEAD
   margin: 0;
   width: 50px;
   border-radius: 80px;
+=======
+  width: 50px;
+>>>>>>> 68dbb37b98d03bf5480dbea6e6afa91d5503ff79
 }
