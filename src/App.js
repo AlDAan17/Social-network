@@ -5,9 +5,28 @@ import Header from './components/Header/Header';
 import NavBar from './components/Navbar/NavBar';
 import Profile from './components/Profile/Profile';
 import MyPosts from './components/Profile/MyPosts/MyPosts';
-<<<<<<< HEAD
 import Dialogs from "./components/Dialogs/Dialogs";
+import News from "./components/News/News";
+import Settings from "./components/Settings/Settings";
+import Music from "./components/Music/Music";
 import {BrowserRouter, Route} from "react-router-dom";
+
+// const App = () => {
+//     return (
+//         <BrowserRouter>
+//             <div className='app-wrapper'>
+//                 <Header/>
+//                 <NavBar/>
+//                 <div className='app-wrapper-content'>
+//                     <Route path="/Profile" component={Profile}/>
+//                     <Route path="/Dialogs" component={Dialogs}/>
+//                     {/*<Profile />*/}
+//                     <Dialogs/>
+//                 </div>
+//             </div>
+//         </BrowserRouter>
+//     );
+//why it's doesn't work..
 
 const App = () => {
     return (
@@ -16,25 +35,15 @@ const App = () => {
                 <Header/>
                 <NavBar/>
                 <div className='app-wrapper-content'>
-                    <Route path="/Profile" component={Profile}/>
-                    <Route path="/Dialogs" component={Dialogs}/>
+                    <Route path='/dialogs' component={Dialogs}/>
+                    <Route path='/profile' component={Profile}/>
+                    <Route path='/News' component={News}/>
+                    <Route path='/Music' component={Music}/>
+                    <Route path='/Settings' component={Settings}/>
                     {/*<Profile />*/}
-                    <Dialogs/>
                 </div>
             </div>
-        </BrowserRouter>
-    );
-=======
-
-const App = () => {
-  return (
-    <div className = 'app-wrapper'>
-      <Header />
-      <NavBar />
-      <Profile />
-    </div>
-  );
->>>>>>> 68dbb37b98d03bf5480dbea6e6afa91d5503ff79
+        </BrowserRouter>)
 }
 
 export default App;
