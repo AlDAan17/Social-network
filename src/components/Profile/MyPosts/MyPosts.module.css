@@ -1,7 +1,20 @@
 .item {
   color: pink;
+  padding: 10px;
 }
 
 .item img{
   width: 50px;
+}
+
+.postsBlock{
+  padding: 10px;
+}
+
+.postsAdd{
+  margin: 10px;
+}
+
+.postRemove{
+  margin: 10px;
 }
