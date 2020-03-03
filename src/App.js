@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import kotori from './kotori.png';
 import Header from './components/Header/Header';
 import NavBar from './components/Navbar/NavBar';
 import Profile from './components/Profile/Profile';
@@ -11,36 +10,20 @@ import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
 import {BrowserRouter, Route} from "react-router-dom";
 
-// const App = () => {
-//     return (
-//         <BrowserRouter>
-//             <div className='app-wrapper'>
-//                 <Header/>
-//                 <NavBar/>
-//                 <div className='app-wrapper-content'>
-//                     <Route path="/Profile" component={Profile}/>
-//                     <Route path="/Dialogs" component={Dialogs}/>
-//                     {/*<Profile />*/}
-//                     <Dialogs/>
-//                 </div>
-//             </div>
-//         </BrowserRouter>
-//     );
-//why it's doesn't work..
+const App = (props) => {
 
-const App = () => {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <NavBar/>
                 <div className='app-wrapper-content'>
-                    <Route exact path='/dialogs' component={Dialogs}/>
-                    <Route path='/profile' component={Profile}/>
-                    <Route path='/News' component={News}/>
-                    <Route path='/Music' component={Music}/>
-                    <Route path='/Settings' component={Settings}/>
-                    {/*<Profile />*/}
+                    <Route exact path='/dialogs' render={() =>
+                        <Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData}/>}/>
+                    <Route path='/profile' render={() => <Profile postsData={props.postsData}/>}/>
+                    <Route path='/News' render={() => <News/>}/>
+                    <Route path='/Music' render={() => <Music/>}/>
+                    <Route path='/Settings' render={() => <Settings/>}/>
                 </div>
             </div>
         </BrowserRouter>)

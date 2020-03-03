@@ -1,14 +1,14 @@
 import React from 'react';
 import classes from './Profile.module.css';
-import bg from './../../bg.jpg';
 import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from "./ProfileInfo/Profile";
 
-const Profile = () => {
+const Profile = (props) => {
+
     return (
         <div>
             <ProfileInfo/>
-            <MyPosts/>
+            <MyPosts postsData={props.postsData}/>
         </div>
     );
 }

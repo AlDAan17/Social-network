@@ -7,16 +7,27 @@
     padding: 10px;
 }
 
-.dialogsItems{}
+.dialog a{
+    color:#fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.dialog a:hover{
+    color: gold;
+}
+
+.dialogsItems{
+}
 
 .messages{
-
+    color: #222;
 }
 
 .message{
     padding: 10px;
 }
 
-.active{
+.dialog a .active{
     color: yellow;
 }
